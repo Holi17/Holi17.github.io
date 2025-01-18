@@ -111,19 +111,19 @@
       <p>Frühstück im Emastoa in Reitdorf, damit ma guad gestärkt san</p>
     </div>
     <div class="tile">
+        <img src="./gosausee.jpg" alt="Gosausee">
+        <h3>11:00 Uhr</h3>
+        <p>Gosauseen oschaun, very much toll</p>
+    </div>
+    <div class="tile">
       <img src="./tierpark.jpg" alt="Wildtierpark">
-      <h3>12:00 Uhr</h3>
+      <h3>13:00 Uhr</h3>
       <p>Abstecher im Wildtierpark Kleefeld</p>
     </div>
     <div class="tile">
-        <img src="./wolfgangsee.jpg" alt="Wolfgangsee">
-        <h3>14:00 Uhr</h3>
-        <p>Wolfgangsee oschaun, very much toll</p>
-    </div>
-    <div class="tile">
-        <img src="./gaisberg.jpg" alt="Gaisberg">
+        <img src="./eier.jpg" alt="Eier chün">
         <h3>15:30 Uhr</h3>
-        <p>Gaisbergspitze, hoffentlich geht nid wieder so da koite Wind</p>
+        <p>Eier schaukeln in Soizburg</p>
     </div>
     <div class="tile">
         <img src="./essen.jpg" alt="Gaisberg">
@@ -148,16 +148,16 @@
 
   <script>
     // Interaktive Karte
-    const map = L.map('map').setView([47.526448, 12.826021], 8); 
+    const map = L.map('map').setView([47.703013, 13.167716], 8); 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
     }).addTo(map);
     L.marker([47.792951, 12.988638]).addTo(map).bindPopup('Kino und Mci').openPopup();
     L.marker([47.371977, 13.388524]).addTo(map).bindPopup('Emastoa Frühstück').openPopup();
-    L.marker([47.381866, 13.422070]).addTo(map).bindPopup('Die Hood').openPopup();
     L.marker([47.701398, 13.485730]).addTo(map).bindPopup('Wildtierpark Kleefeld').openPopup();
-    L.marker([47.763433, 13.364810]).addTo(map).bindPopup('St. Gilgen').openPopup();
-    L.marker([47.803439, 13.110982]).addTo(map).bindPopup('Gaisbergspitze').openPopup();
+    L.marker([47.800893, 13.045063]).addTo(map).bindPopup('Soizbuag City').openPopup();
+    L.marker([47.529550, 13.505042]).addTo(map).bindPopup('Gosauseen').openPopup();
+    L.marker([47.381866, 13.422070]).addTo(map).bindPopup('Die Hood').openPopup();
 
     // Scroll-Animationen mit GSAP
     gsap.registerPlugin(ScrollTrigger);
